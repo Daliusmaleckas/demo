@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geriausi 2022 metu veiksmo filmai</title>
+    <style>
+
+        body {
+            background-repeat: no-repeat;
+            background: linear-gradient(to right, rgb(66, 39, 90), rgb(115, 75, 109));
+            background-size: 100%
+            
+            
+        }
+        
+        .div1 {
+        
+        background-color: transparent;
+        color: white;
+        display: inline-block;
+        
+        }
+         
+        
+        .ieskotiFilmu {
+        
+        margin-left: 400px;
+        margin-top: 20px;
+        position: relative;
+        
+        
+        }
+        div {
+            display: inline-block;
+            position: absolute;
+        }
+        
+        .ieskotiInput {
+
+            height: 30px;
+            width: 300px;
+            border-color:white;
+            border-style: solid;
+            color: white;
+
+        }
+
+        input {
+            background-color:transparent
+        }
+
+        input::placeholder {
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+        }
+      
+
+        .ieskotiButton {
+            height: 35px;
+            width: 120px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        .atsijungtiButton {
+            height: 35px;
+            width: 90px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+            margin-left: -200px;
+            margin-right: 200px;
+        }
+
+        .atsijungtiButton:active {
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+        }
+
+        .ieskotiButton:active {
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+           
+        }
+
+        
+
+        .filmuPav {
+
+            margin-top: 230px;
+            color: white;
+            background: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+            border-image: linear-gradient(to right, rgb(61, 23, 71), darkorchid) 1;
+            border-width: 4px;
+            border-style: solid;
+            margin-left: 300px;
+            
+        
+        }
+
+        .table {
+            margin-left: 10px;
+            text-align: left;
+        }
+        
+        .atsiliepimai {
+            color: white;
+            text-align: center;
+            margin-top: 700px
+            
+          
+
+        }
+
+        option {
+            color:black;
+        }
+
+        
+        .pasirinktiButton {
+
+            height: 30px;
+            width: 120px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+
+
+        }
+
+        .pasirinktiButton:active {
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+        }
+
+        .adminClass {
+
+            justify-content: center;
+            margin-top: 550px;
+            padding-right: 75px;
+            margin-left: 300px;
+            color: white;
+            background: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+            border-image: linear-gradient(to right, rgb(61, 23, 71), darkorchid) 1;
+            border-width: 4px;
+            border-style: solid;
+            margin-top: 450px;
+            
+
+        }
+
+        input{
+    color: #ffffff;
+}
+         .PridetiFilmaButton {
+
+             height: 25px;
+             font-size: 15px;
+            width: 90px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+
+}
+
+
+        .PridetiFilmaButton:active {
+
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+
+
+        }
+
+
+
+.inputTextBox[type="text"], textarea {
+
+    background-color : transparent;
+    border: none;
+    border-bottom:2px solid black;
+    outline: none;
+
+}
+
+.textanimation {
+
+    animation: color-change 1s infinite;
+
+    
+}
+
+
+@keyframes color-change {
+  0% { color: rgb(255, 255, 255); }
+  50% { color: rgb(92, 91, 91); }
+  100% { color: rgb(255, 255, 255); }
+}
+
+.span1 {
+
+    animation: color-text 0.7s infinite;
+
+}
+
+@keyframes color-text {
+  50% { color: rgb(255, 30, 1); }
+  75% { color: rgb(255, 225, 0); }
+  100% { color: rgb(255, 0, 0)}
+}
+        
+    
+        
+            </style>
+</head>
+<body>
+
+
+
+
+<div>
+<div class="div1">
+<h1 class="textanimation"> <u>Sveiki, admin</u></h1>
+</div>
+
+<div class="ieskotiFilmu">
+<button onclick="atsijungti()" class="atsijungtiButton">Atsijungti</button>  
+<input id="inputFilmas" class="ieskotiInput" placeholder="Ieskoti filmu" type="text">
+<button onclick="tikrinti()" id="tikrintiButton" class="ieskotiButton" type="submit"> <strong>Ieskoti</strong></button>
+
+
+
+<p style="color:white; margin-left: 100px;"> Arba pasirinkite filma apacioje </p>
+
+<select style="margin-left: 100px; height: 30px; background-color: black; color: white;" id="filmai2022">
+    <option style="color: white;" id="Maverick2" value="Maverick" selected>Maverick</option>
+    <option style="color: white;" id="RiseRoarRevolt2" value="Rise Roar Revolt">Rise Roar Revolt</option>
+    <option style="color: white;" id="Viking2" value="Viking">Viking</option>
+    <option style="color: white;" id="TheUnbearableWeightOfAGiantTalent2" value="The Unbearable Weight of A Giant Talent">The Unbearable Weight of A Giant Talent</option>
+    <option style="color: white;" id="TheGrayMan2" value="The Gray Man">The Gray Man</option>
+  </select>
+
+  <button onclick="Pasirinkti()" id="PasirinktiButton" type="submit" class="pasirinktiButton"><strong>Pasirinkti</strong> </button></button>
+</div>
+</div>
+
+<div class="filmuPav">
+    <p style="margin-left: 20px;font-size: 18px;"> <strong>Top 5 Geriausiu 2022 Veiksmo filmu(is imdb) </strong></p>
+    <table class="table" id="addFilmai">
+    <tr  id="tr1">
+        <th style=" font-size: 20px; color: white">
+         <span class="span1" style="color:yellow">TOP 1</span> Maverick su  8.3 <span style="color:yellow">&#9734;</span>  reitingu
+        </th>
+    </tr>
+    <tr id="tr2">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 2</span> RRR (Rise Roar Revolt) su 7.9 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+    <tr id="tr3">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 3</span> Viking su 7.1 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+    <tr id="tr4">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 4</span> The Unbearable Weight of Massive Talent su 7 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+
+    <tr id="tr5">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 5</span> The Gray Man su 6.9 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+        
+    </table>
+
+
+
+</div>
+
+<div class="adminClass">
+    <h1>(admin) Prideti filma: </h1>
+    <input class="inputTextBox" id="inputFilmas" style="margin-bottom: 10px;" placeholder="" type="text">
+    <button type="button" onclick="addFilm()" class="PridetiFilmaButton">Prideti</button>
+    <h1>(admin) Ištrinti filma:</h1>
+    <input class="inputTextBox" id="inputFilmasDel" style="margin-bottom: 10px;" placeholder="" type="text"> 
+    <button type="button" onclick="deleteFilm()" class="PridetiFilmaButton">Istrinti</button>
+</div>
+
+
+
+<script>
+
+function addFilm() {
+
+    var table = document.getElementById("addFilmai");
+    var row = table.insertRow(5);
+        var input = document.getElementsByTagName('input');
+            for(var i = 0, l = input.length; i < l; i++){
+            var cell = row.insertCell(i);
+               cell.innerHTML = input[i].value;
+               cell.style.color = "white";
+               cell.style.fontSize = "20px";
+
+
+            }
+
+}
+
+
+function deleteFilm() {
+
+
+    const inputMain = document.getElementById('inputFilmasDel').value;
+
+  
+    if  ( inputMain == "Rise Roar Revolt" || inputMain == "RRR" ||  inputMain == "rise roar revolt" ||  inputMain == "2" ) {
+        document.getElementById("addFilmai").deleteRow(1);
+    }
+    
+     
+    else if  ( inputMain == "Maverick" || inputMain == "maverick" || inputMain == "1"   ) {
+        document.getElementById("addFilmai").deleteRow(0);
+    }
+
+    else if  ( inputMain == "Viking" || inputMain == "viking" || inputMain == "3" ) {
+        document.getElementById("addFilmai").deleteRow(2);
+    }
+
+    else if  ( inputMain == "TUWOMT" || inputMain == "the unbearable weight of massive talent" || inputMain == "4" ) {
+        document.getElementById("addFilmai").deleteRow(3);
+    }
+    
+    else if  ( inputMain == "The Gray Man" || inputMain == "the gray man" || inputMain == "5" ) {
+        document.getElementById("addFilmai").deleteRow(4);
+    }
+
+    else (
+        alert("Tokio filmo nera!")
+    )
+
+   // let table = document.getElementById("addFilmai");
+    //const inputMain = document.getElementById('inputFilmasDel').value;
+ 
+   // if (inputMain = "Meniu" || "meniu" ) {
+       // document.getElementById("addFilmai").removeChild(p);
+               
+           // }
+  // else {
+    // alert("tokio filmo nera!")
+   // }
+  
+        }
+
+
+
+function tikrinti() {
+
+const Filmas = document.getElementById('inputFilmas').value;
+const mgtk = document.getElementById('tikrintiButton').value;
+
+if ( Filmas == "Maverick" || Filmas == "maverick" ||  Filmas == "MAVERICK" )
+ 
+ {           window.location = "Maverick.html";
+            return false;
+        }
+
+else if ( Filmas == "Rise Roar Revolt" || Filmas == "rise roar revolt" || Filmas == "rrr" || Filmas == "RRR" || Filmas == "RISE ROAR REVOLT" ) {
+            window.location = "RiseRoarRevolt.html";
+            return false;
+}
+
+else if (Filmas == "Viking" || Filmas == "viking" || Filmas == "VIKING") {
+            window.location = "Viking.html";
+            return false;
+}
+
+else if (Filmas == "The Unbearable Weight A of Giant Talent" || Filmas == "the unbearable weight a  of giant talent" || Filmas == "THE UNBEARABLE WEIGHT OF A GIANT TALENT" || Filmas == "TUWOAGT") {
+            window.location = "TheUnbearableWeightOfAGiantTalent.html";
+            return false;
+}
+
+else if (Filmas == "The Gray Man" || Filmas == "the gray man" || Filmas == "THE GRAY MAN") {
+            window.location = "TheGrayMan.html";
+            return false;
+}
+
+        else {
+            alert('Tokio filmo nera!')
+        }
+
+
+    }
+
+
+function Pasirinkti() {
+
+    const Maverick = document.getElementById('Maverick2');
+    const RiseRoarRevolt = document.getElementById('RiseRoarRevolt2');
+    const Viking = document.getElementById('Viking2');
+    const TheUnbearableWeightOfAGiantTalent = document.getElementById('TheUnbearableWeightOfAGiantTalent2');
+    const TheGrayMan = document.getElementById('TheGrayMan2');
+
+    if( Maverick.selected) {
+        window.location = "Maverick.html";
+    }
+    else if (RiseRoarRevolt.selected) {
+        window.location = "RiseRoarRevolt.html";
+    }
+    else if (Viking.selected) {
+        window.location = "Viking.html";
+    }
+    else if (TheUnbearableWeightOfAGiantTalent.selected) {
+        window.location = "TheUnbearableWeightOfAGiantTalent.html";
+    }
+    else if (TheGrayMan.selected) {
+        window.location = "TheGrayMan.html";
+    }
+    else {
+        alert('Jus nepasirinkote filmo')
+    }
+
+
+
+
+}
+
+function atsijungti() {
+    window.location = "svetaine.html";
+
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

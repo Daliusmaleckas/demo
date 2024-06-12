@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geriausi 2022 metu siaubo filmai</title>
+    <style>
+
+body {
+            background-repeat: no-repeat;
+            background: linear-gradient(to right, rgb(66, 39, 90), rgb(115, 75, 109));
+            background-size: 100%
+            
+            
+        }
+        
+        .div1 {
+        
+        background-color: transparent;
+        color: white;
+        display: inline-block;
+        
+        }
+         
+        
+        .ieskotiFilmu {
+        
+        margin-left: 400px;
+        margin-top: 20px;
+        position: relative;
+        
+        
+        }
+        div {
+            display: inline-block;
+            position: absolute;
+        }
+        
+        .ieskotiInput {
+
+            height: 30px;
+            width: 300px;
+            border-color:white;
+            border-style: solid;
+            color: white;
+
+        }
+
+        input {
+            background-color:transparent
+        }
+
+        input::placeholder {
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+        }
+      
+
+        .ieskotiButton {
+            height: 35px;
+            width: 120px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        .atsijungtiButton {
+            height: 35px;
+            width: 90px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+            margin-left: -150px;
+            margin-right: 200px;
+        }
+
+        .atsijungtiButton:active {
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+        }
+
+        .ieskotiButton:active {
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+           
+        }
+
+        
+
+        .filmuPav {
+
+            margin-top: 230px;
+            color: white;
+            background: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+            border-image: linear-gradient(to right, rgb(61, 23, 71), darkorchid) 1;
+            border-width: 4px;
+            border-style: solid;
+            margin-left: 300px;
+            
+        
+        }
+
+        .table {
+            margin-left: 10px;
+            text-align: left;
+        }
+        
+        .atsiliepimai {
+            color: white;
+            text-align: center;
+            margin-top: 700px
+            
+          
+
+        }
+
+        option {
+            color:black;
+        }
+
+        
+        .pasirinktiButton {
+
+            height: 30px;
+            width: 120px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+
+
+        }
+
+        .pasirinktiButton:active {
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+        }
+
+        .adminClass {
+
+            justify-content: center;
+            margin-top: 550px;
+            padding-right: 75px;
+            margin-left: 300px;
+            color: white;
+            background: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+            border-image: linear-gradient(to right, rgb(61, 23, 71), darkorchid) 1;
+            border-width: 4px;
+            border-style: solid;
+            margin-top: 450px;
+            
+
+        }
+
+        input{
+    color: #ffffff;
+}
+         .PridetiFilmaButton {
+
+             height: 25px;
+             font-size: 15px;
+            width: 90px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+
+}
+
+
+        .PridetiFilmaButton:active {
+
+            border-color:rgb(214, 205, 205) ;
+            color:rgb(214, 205, 205)
+
+
+        }
+
+
+
+.inputTextBox[type="text"], textarea {
+
+    background-color : transparent;
+    border: none;
+    border-bottom:2px solid black;
+    outline: none;
+
+}
+
+.textanimation {
+
+    animation: color-change 1s infinite;
+
+    
+}
+
+
+@keyframes color-change {
+  0% { color: rgb(255, 255, 255); }
+  50% { color: rgb(92, 91, 91); }
+  100% { color: rgb(255, 255, 255); }
+}
+
+.span1 {
+
+    animation: color-text 0.7s infinite;
+
+}
+
+@keyframes color-text {
+  50% { color: rgb(255, 30, 1); }
+  75% { color: rgb(255, 225, 0); }
+  100% { color: rgb(255, 0, 0)}
+}
+        
+
+        
+            </style>
+</head>
+<body>
+
+
+
+
+<div>
+<div class="div1">
+    <h1 class="textanimation"> <u>Sveiki, Vardas478</u></h1>
+</div>
+
+<div class="ieskotiFilmu">
+    <button onclick="atsijungti()" class="atsijungtiButton">Atsijungti</button>  
+    <input id="inputFilmas" class="ieskotiInput" placeholder="Ieskoti filmu" type="text">
+    <button onclick="tikrinti()" id="tikrintiButton" class="ieskotiButton" type="submit"> <strong>Ieskoti</strong></button>
+    
+    
+    
+    <p style="color:white; margin-left: 100px;"> Arba pasirinkite filma apacioje </p>
+    
+    <select style="margin-left: 100px; height: 30px; background-color: black; color: white;" id="filmai2022">
+        <option style="color: white;" id="TalkToMe2" value="TalkToMe" selected>Talk to Me</option>
+        <option style="color: white;" id="Meniu2" value="Meniu">Meniu</option>
+        <option style="color: white;" id="Pearl2" value="Pearl">Pearl</option>
+        <option style="color: white;" id="TheOutwaters2" value="TheOutwaters">The Outwaters</option>
+        <option style="color: white;" id="Barbarian2" value="Barbarian">Barbarian</option>
+      </select>
+    
+      <button onclick="Pasirinkti()" id="PasirinktiButton" type="submit" class="pasirinktiButton"><strong>Pasirinkti</strong> </button></button>
+    </div>
+    </div>
+
+<div class="filmuPav">
+    <p style="margin-left: 20px;font-size: 18px;"> <strong>Top 5 Geriausiu siu metu siaubo filmu(is imdb) </strong></p>
+    <table class="table" id="addFilmai">
+    <tr  id="tr1">
+        <th style=" font-size: 20px; color: white">
+         <span class="span1" style="color:yellow">TOP 1</span> Talk to me su 8.4 <span style="color:yellow">&#9734;</span>  reitingu
+        </th>
+    </tr>
+    <tr id="tr2">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 2</span> Meniu su 7.3 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+    <tr id="tr3">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 3</span> Pearl su 7.2 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+    <tr id="tr4">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 4</span> The Outwaters su 7.1 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+
+    <tr id="tr5">
+        <th style=" font-size: 20px; color: white">
+            <span class="span1" style="color:yellow">TOP 5</span> Barbarian su 7 <span style="color:yellow">&#9734;</span> reitingu
+        </th>
+    </tr>
+        
+    </table>
+
+
+
+
+
+<script>
+
+function tikrinti() {
+
+const Filmas = document.getElementById('inputFilmas').value;
+const mgtk = document.getElementById('tikrintiButton').value;
+
+if ( Filmas == "Talk to Me" || Filmas == "talk to me") {
+            window.location = "TalkToMe.html";
+            return false;
+        }
+
+else if ( Filmas == "Meniu" || Filmas == "meniu" ) {
+            window.location = "Meniu.html";
+            return false;
+}
+
+else if (Filmas == "Pearl" || Filmas == "pearl") {
+            window.location = "Pearl.html";
+            return false;
+}
+
+else if (Filmas == "The Outwaters" || Filmas == "the outwaters") {
+            window.location = "TheOutwaters.html";
+            return false;
+}
+
+else if (Filmas == "Barbarian" || Filmas == "barbarian") {
+            window.location = "Barbarian.html";
+            return false;
+}
+
+        else {
+            alert('Tokio filmo nera!')
+        }
+
+
+    }
+
+
+function Pasirinkti() {
+
+    const TalkToMe = document.getElementById('TalktoMe2');
+    const Meniu = document.getElementById('Meniu2');
+    const Prey = document.getElementById('Pearl2');
+    const TheOutwaters = document.getElementById('TheOutwaters2');
+    const Barbarian = document.getElementById('Barbarian2');
+
+    if( TalkToMe.selected) {
+        window.location = "TalkToMe.html";
+    }
+    else if (Meniu.selected) {
+        window.location = "Meniu.html";
+    }
+    else if (Prey.selected) {
+        window.location = "Pearl.html";
+    }
+    else if (TheOutwaters.selected) {
+        window.location = "TheOutwaters.html";
+    }
+    else if (Barbarian.selected) {
+        window.location = "Barbarian.html";
+    }
+    else {
+        alert('Jus nepasirinkote filmo')
+    }
+
+
+
+
+}
+
+function atsijungti() {
+    window.location = "svetaine.html";
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
